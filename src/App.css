@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Jetbrains Mono';
+    src: url('/fonts/JetBrainsMono-VariableFont_wght.ttf');
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    font-family: 'Jetbrains Mono', monospace;
+    background-color: #18171F;
+
+    color: #817D92;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 700;
+}
+
+.heading_large {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 540px;
+    width: 100%;
+}
+
+.panel {
+    padding: 1rem 2rem;
+    background-color: #24232C;
+    margin-bottom: 24px;
+    color: #E6E5EA;
+}
+
+.title {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.generate {
+    display: block;
+    width: 100%;
+
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-top: 19px;
+
+    color: #24232C;
+    background-color: #A4FFAF;
+
+    cursor: pointer;
+}
+
+.generate:hover {
+    background: none;
+    color: #A4FFAF;
+    outline: solid 2px #A4FFAF;
+}
+
+.checkbox_field {
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 19px;
+}   
+
+.checkbox_label {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+}
+
+.checkbox_input {
+    width: 20px;
+    height: 20px;
+    background-color: #18171F00;
+    outline: solid 2px #E6E5EA;
+    outline-offset: -2px;
+
+    cursor: pointer;
+}
+
+.checkbox_input:checked {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #A4FFAF;
+    outline: solid 3px #A4FFAF;
+}
+
+.checkbox_input:checked::before {
+    content: '✔';
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0.0125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #18171F;
+}
+
+.slider_field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.slider_label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.slider_value {
+    width: 100%;
+
+    text-align: right;
+    color: #A4FFAF;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 43px;
+    font-weight: 700;
+}
+
+.slider_input {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+}
+
+.slider_input::-webkit-slider-runnable-track  {
+    height: 0.5rem;
+    background: #18171F;
+}
+
+.slider_input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #E6E5EA;
+    transform: translateY(-10px);
+
+    cursor: pointer;
+}
+
+.slider_top {
+    display: flex;
+}
+
+.password_field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.password_value {
+    margin: 0;
+    width: 100%;
+    font-size: 2rem;
+    font-family: inherit;
+    background: none;
+    border: none;
+    margin-right: 1rem;
+    line-height: 43px;
+    font-weight: 700;
+}
+
+.password_value:focus-visible {
+    outline: solid 3px #A4FFAF;
+}
+
+.password_copy {
+    max-width: 24px;
+    object-fit: contain;
+    height: 100%;
+    cursor: pointer;
+}
+
+.password_copy_section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.status_tip {
+    background-color: #A4FFAF;
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.status_message {
+    color: #18171F;
+    margin: 0;
+}
+
+.strength_meter {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #18171F;
+    color: #817D92;
+}
+
+.strength_meter_label {
+    
+}
+
+.strength_meter_group {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.strength_meter_message {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #E6E5EA;
+    margin-right: 0.5rem;
+}
+
+.strength_meter_bar {
+    height: 28px;
+    width: 10px;
+    background-color: #18171F;
+    outline: solid 2px #E6E5EA;
+}
+
+.strength_meter_bar_filled {
+    outline: none;
+}
