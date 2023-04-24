@@ -1,9 +1,11 @@
-import { useState, useReducer } from 'react'
+import { useState, useReducer, useEffect } from 'react'
 import Password from './components/Password'
 import { generatePassword } from './generator'
+import './App.css'
 import SliderField from './components/SliderField'
 import CheckboxField from './components/CheckboxField'
 import StrengthMeter from './components/StrengthMeter'
+
 
 export type OptionState = {
   characterLength: number,
