@@ -6,7 +6,6 @@ import SliderField from './components/SliderField'
 import CheckboxField from './components/CheckboxField'
 import StrengthMeter from './components/StrengthMeter'
 
-
 export type OptionState = {
   characterLength: number,
   includeUppercase: boolean,
@@ -41,7 +40,11 @@ function optionReducer(state: OptionState, action: OptionChangeAction) {
   }
 }
 
-function App() {
+export interface AppProps {
+  externalStyles?: string
+}
+
+function App(props: AppProps) {
   const [options, dispatchOptionChange] = useReducer(optionReducer, {
     characterLength: 32,
     includeUppercase: true,
@@ -62,6 +65,7 @@ function App() {
 
   return (
     <div className={'app'}>
+      <style>{props.externalStyles}</style>
       <div className={'container'}>
         <p className={'title'}>Password Generator</p>
         <div className={'panel'}>
