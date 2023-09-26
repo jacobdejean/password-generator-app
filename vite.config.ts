@@ -6,5 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'esnext',
+  },
+  server: {
+    host: true,
+    strictPort: true,
+    port: 512735,
   }
 })
